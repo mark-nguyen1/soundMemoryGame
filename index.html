@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Hello world!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <center>
+    <h1 style= "cursive;font-size: 35px">
+      <u>Light and Sound Memory Game</u> 
+    </h1>
+
+    <p>
+      Repeat the pattern back ~ Good Luck! 
+      </p>
+      <p>
+        <b id = "roundAmount" style = "color:red;">6</b> rounds <b id = "timeAmount" style = "color:red;">30</b> seconds each.
+      </p>
+      <p id = "roundsCompletedText" class = "hidden">
+        <b id = "roundsCompletedBold" style = "color:blue;" > 0 </b> rounds completed
+      </p>
+      <p id = "afterGameText"  class = "hidden">
+        Congrats, you have a high score of <b id = "highScore" style = "color:blue;">0</b> rounds completed!
+      </p>
+    <button id="startBtn" style = "background-color:DeepSkyBlue" onclick="startGame()">
+      Start
+    </button>
+    <button id="stopBtn"  style = "background-color:red" class="hidden" onclick="stopGame()">
+      End
+    </button>
+
+   
+      <div>
+            
+          <button id="pianoAudio" onclick="switchAudio('arcade')"> Piano Mode </button>
+          <button id="arcadeAudio" class="hidden" onclick="switchAudio('animal')"> Arcade Mode </button>   
+          <button id="animalAudio" class="hidden" onclick="switchAudio('piano')"> Pokemon Mode </button>
+
+          <button id="rotateButton5" style = "background-color:pink" onclick="switchButtons(6)"> 5 Buttons </button>
+          <button id="rotateButton6" style = "background-color:Turquoise" class="hidden" onclick="switchButtons(7)"> 6 Buttons </button>   
+          <button id="rotateButton7" style = "background-color:DarkGray" class="hidden" onclick="switchButtons(8)"> 7 Buttons </button>
+          <button id="rotateButton8" style = "background-color:SlateBlue" class="hidden" onclick="switchButtons(5)"> 8 Buttons </button>
+
+          <button id="lightMode" onclick="switchMode('dark')"> Light Mode </button>
+          <button id="darkMode" onclick="switchMode('light')" class = "hidden"> Dark Mode </button>
+        
+          <button style = "background-color:lightgreen" id="easyMode" onclick="switchDifficulty('medium')"> Easy </button>
+          <button style = "background-color:orange" id="mediumMode" class = "hidden" onclick="switchDifficulty('hard')"> Medium  </button>
+          <button style = "background-color:Crimson" id="hardMode" class = "hidden" onclick="switchDifficulty('infinite')"> Hard </button>
+            <button id ="infiniteMode" style = "background-color:red" class = "hidden" onclick = "switchDifficulty('easy')" > EXPERT </button>
+        
+      </div>
+      
+      <div id = "heart" >
+        <img id="heart1" class="hidden" src="https://cdn.glitch.global/7ae64d65-2a75-40ea-b631-5f797d099a09/heart.png?v=1648696489638" >
+        <img id="heart2" class="hidden" src="https://cdn.glitch.global/7ae64d65-2a75-40ea-b631-5f797d099a09/heart.png?v=1648696489638" >
+        <img id="heart3" class="hidden" src="https://cdn.glitch.global/7ae64d65-2a75-40ea-b631-5f797d099a09/heart.png?v=1648696489638" >
+      </div>
+    
+    <img style="text-align:center;"  id = "goSign" class = "hidden" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Go_sign.svg/1200px-Go_sign.svg.png"/>      
+    <img style="text-align:center;" id = "waitSign" class = "hidden" src = "https://www.seekpng.com/png/full/303-3038493_prohibited-transaction-rules-part-i-wait-hand-sign.png"/>
+        
+    <div id ="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"></button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"></button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"></button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()"></button>
+     <div id ="gameButtonAreaBelow">
+        <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()" class="hidden"></button>
+        <button id="button7" onclick="guess(7)" onmousedown="startTone(7)" onmouseup="stopTone()" class="hidden"></button>
+        <button id="button8" onclick="guess(8)" onmousedown="startTone(8)" onmouseup="stopTone()" class="hidden"></button>  
+     </div>
+    </div>
+    <p id = "timer">
+      30
+      </p>
+      
+   </center>
+  </body>
+</html>
