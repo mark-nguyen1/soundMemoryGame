@@ -1,6 +1,7 @@
 Mark Nguyen 
 
-Game where users are to replay the button queue sequence according to the system. Every round, a new button is added to the queue sequences
+Game where users are to replay the button queue sequence according to the system. Every round, a new button is added to the queue sequence.
+High score is kept track and displayed on the menu. 
 
 ## Video Walkthrough (GIF)
 
