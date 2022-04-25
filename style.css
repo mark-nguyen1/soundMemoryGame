@@ -1,0 +1,225 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+ 
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: "Lucida Console",Fantasy ;
+  line-height: 1.5;
+  background-color: LightSteelBlue;
+  color: Black; 
+ 
+}
+ 
+#timer{
+  background-color : Aqua;
+  height : 80px;
+  width : 100px;
+  justify-content: center;
+  display: inline-flex;
+  margin:10px;
+  font-size:44px;
+  
+  border-radius: 100px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: DarkSlateBlue;
+}
+button {
+  padding: 10px;
+  border-radius: 100px;
+}
+
+#lightMode {
+  background: yellow;
+
+}
+#darkMode{
+  background:grey;
+  color:white;
+}
+
+#gameButtonArea > button {
+  width:200px;
+  height:200px;
+  margin:2px;
+}
+
+#gameButtonAreaBelow > button { 
+    width:220px;
+  height:170px;
+  margin:2px;
+}
+ 
+
+#pianoAudio { 
+  background: lightblue;
+}
+#arcadeAudio {
+  background: LightSalmon;
+}
+#animalAudio {
+  background:RoyalBlue;
+}
+
+/*Game Buttons*/
+
+#button1 {
+  background: yellow;
+}
+#button1.arcade{ 
+  background-image: url("https://freepngimg.com/thumb/pacman/21577-4-pac-man-transparent-thumb.png");
+}
+#button1.animal{
+ background-image: url("https://cdn.glitch.global/7ae64d65-2a75-40ea-b631-5f797d099a09/Spr_6o_025_C.webp?v=1650505374653");
+}
+#button1:active, #button1.lit {
+  background:orange;
+}
+
+#button2 {
+  background-image: url("https://i5.walmartimages.com/asr/547f4117-2854-452c-8ec6-f27fd3931c5d.e289beb17accf0f466a55123c43e327e.jpeg");
+}
+#button2.arcade {
+  background : lightblue;
+  background-image: url("https://cliply.co/wp-content/uploads/2019/05/391905030_SPARKLES_400.png"); 
+}
+#button2.animal{
+  background : lightblue; 
+  background-image: url("https://cdn.glitch.global/7ae64d65-2a75-40ea-b631-5f797d099a09/007Squirtle.webp?v=1650506190951");
+}
+#button2:active, #button2.lit {
+  background:blue;
+}
+
+#button3 {
+  background: pink;
+  background-image: url("https://i.pinimg.com/originals/95/64/f9/9564f9e0286d1bec5ed420533f4c9a08.png")
+}
+#button3.arcade{
+  background: pink;
+  background-image: url("https://freepngimg.com/thumb/strawberry/22958-4-strawberry-clipart-thumb.png");
+}
+#button3.animal{
+  background : pink; 
+  background-image: url("https://cdn.glitch.global/7ae64d65-2a75-40ea-b631-5f797d099a09/117717-charmander-png-image-high-quality-thumb.png?v=1650505812289");
+}
+#button3:active, #button3.lit {
+  background:red;
+}
+
+#button4 {
+  background-image: url("https://wallpaperaccess.com/full/1516404.jpg")
+}
+#button4.arcade{
+  background : lightgreen; 
+  background-image: url("https://cliply.co/wp-content/uploads/2019/05/391905030_SPARKLES_400.png");
+}
+#button4.animal{
+  background : lightgreen; 
+  background-image : url("https://cdn.glitch.global/7ae64d65-2a75-40ea-b631-5f797d099a09/1.webp?v=1650506067653");
+}
+#button4:active, #button4.lit {
+  background:green;
+}
+
+#button5 {
+  background: MediumOrchid;
+}
+#button5.arcade{
+  background : MediumOrchid; 
+  background-image: url("https://freepngimg.com/thumb/space_invaders/92782-pink-purple-pacman-in-adventures-ms-time-thumb.png");
+}
+#button5.animal{
+  background : MediumOrchid; 
+  background-image: url("https://cdn.glitch.global/7ae64d65-2a75-40ea-b631-5f797d099a09/Gengar.webp?v=1650506147093");
+}
+#button5:active, #button5.lit {
+  background-image: url("https://wallpaperaccess.com/full/1131207.jpg");
+}
+
+#button6 {
+  background: Turquoise;
+}
+#button6.animal{
+  background : Turquoise; 
+  background-image: url("https://cdn.glitch.global/7ae64d65-2a75-40ea-b631-5f797d099a09/384Rayquaza.webp?v=1650506477507");
+} 
+#button6:active, #button6.lit {
+  background: Teal;
+}
+
+#button7 {
+  background: DarkGray;
+}
+#button7.arcade{
+  background:DarkGray;
+  background-image: url("https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/28fad8a4626137a.png")
+}
+#button7.animal{
+  background:DarkGray;
+  background-image: url("https://cdn.glitch.global/7ae64d65-2a75-40ea-b631-5f797d099a09/Snorlax.webp?v=1650506854880");
+  background-repeat: no-repeat;
+}
+#button7:active, #button7.lit {
+  background: black;
+}
+
+#button8 {
+  background: SlateBlue;
+}
+#button8.animal{
+  background:SlateBlue;
+  background-image: url("https://img.gamewith.net/article_tools/pokemon-unite/gacha/9_i.png");
+}
+#button8:active, #button8.lit {
+  background: MediumBlue;
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.infinte-mode {
+  background-color:Plum;
+}
+
+.red{
+  background: red;
+  width: 200px;
+}
+.green{
+  background: green;
+}
+ 
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+ 
+img{
+  width:40px;
+  height:40px;
+}
+
+
+ 
