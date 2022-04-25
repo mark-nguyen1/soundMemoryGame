@@ -3,6 +3,9 @@ Mark Nguyen
 Game where users are to replay the button queue sequence according to the system. Every round, a new button is added to the queue sequence.
 High score is kept track and displayed on the menu. 
 
+GitHub Pages: 
+ https://wixair.github.io/soundMemoryGame/
+ 
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
