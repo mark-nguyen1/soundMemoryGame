@@ -4,7 +4,7 @@ Game where users are to replay the button queue sequence according to the system
 High score is kept track and displayed on the menu. 
 
 GitHub Pages: 
- https://wixair.github.io/soundMemoryGame/
+https://mark-nguyen1.github.io/soundMemoryGame/
  
 ## Video Walkthrough (GIF)
 
